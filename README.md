@@ -14,6 +14,7 @@ A 4 KB Python chess engine for the [make.fun tiny-chess-01 bounty](https://make.
 - Piece-square evaluation (Tomasz Michniewski tables) with a king endgame table; material P100 N320 B330 R500 Q900
 - Full legal move generation: castling, en passant, underpromotions (queen and knight)
 - `main.py` is a zlib + base85 compressed payload, explicitly allowed by the competition rules; it uses only the Python standard library and talks to the env at `MAKEFUN_ENV_URL` (`/game`, `/move`, `/resign`).
+- Trial results: manual trial-5 measured Elo 1,253 in a clean run; a rook-7th bonus tried after it timed out unmeasured in trial-7 and was reverted, so this tree is the 1,253 version.
 
 ## License
 
